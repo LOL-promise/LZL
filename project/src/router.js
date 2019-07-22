@@ -5,16 +5,17 @@ Vue.use(Router)
 
 
 var router = new Router({
-  // mode: 'history',
   routes: [
       {
           path: '/',
-          name: 'home',
-          // component: () => import('./views/home/home.vue'),
-          children: [
-              // {name: "案例列表", path: '/caseList', component: () => import('@/views/case/caseList')}
-          ]
-      },
+          redirect:"/index",
+      },{
+        path: '/index', 
+        name: "index", 
+        component: () => import('@/views/index')
+      }
+
+
       // {
       //     path: '/login',
       //     name: 'login',

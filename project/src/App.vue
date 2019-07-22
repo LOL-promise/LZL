@@ -6,9 +6,9 @@
 <script>
 export default {
     components: {
-        home: () => import('./components/home/home')
+        home: () => import("./components/home/home")
     }
-}
+};
 </script>
 
 

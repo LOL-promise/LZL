@@ -20,7 +20,27 @@ var router = new Router({
       //     name: 'login',
       //     component: () => import('@/views/login/login')
       // }
-
+      
+      {
+        path: '/service',
+        name: 'service',
+        component: () => import('./views/service')
+      },
+      {
+        path: '/contract',
+        name: 'contract',
+        component: () => import('./views/contract')
+      },
+      {
+        path: '/order',
+        name: 'order',
+        component: () => import('./views/order')
+      },
+      {
+        path: '/authority',
+        name: 'authority',
+        component: () => import('./views/authority')
+      },
   ]
 })
 
